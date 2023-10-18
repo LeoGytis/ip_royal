@@ -22,7 +22,6 @@
           </div>
           <div class="flex">
             <v-icon name="fa-calendar-week" class="mt-1 mr-4" />
-
             <div class="hidden lg:flex">Schedule</div>
           </div>
           <div class="flex">
