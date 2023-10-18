@@ -26,7 +26,7 @@
             <div class="hidden lg:flex">Schedule</div>
           </div>
           <div class="flex">
-            <v-icon name="fa-people-group" class="mt-1 mr-4" />
+            <v-icon name="io-people" class="mt-1 mr-4" />
             <div class="hidden lg:flex"> Employee</div>
           </div>
           <div class="flex">
@@ -41,7 +41,7 @@
             <div class="hidden lg:flex">Support</div>
           </div>
           <div class="flex">
-            <v-icon name="fa-settings" class="mt-1 mr-4" />
+            <v-icon name="io-settings" class="mt-1 mr-4" />
             <div class="hidden lg:flex">Settings</div>
           </div>
         </div>
