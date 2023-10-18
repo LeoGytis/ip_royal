@@ -1,9 +1,4 @@
-import Image from "next/image";
-import scale from "../../../public/images/scale.png";
-import scale5 from "../../../public/images/scale5.png";
-
 <script setup lang="ts">
-
 </script>;
 
 <template>

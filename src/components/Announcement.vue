@@ -18,8 +18,12 @@
         </div>
       </div>
     </div>
-    <div>
-      <p v-if="isLoading">Loading...</p>
+    <div class="flex justify-center items-center">
+      <p v-if="isLoading">
+      <div class="flex items-center p-6">
+        <v-icon name="fa-spinner" animation="spin-pulse" class="mr-3" />Loading...
+      </div>
+      </p>
       <p v-if="error">{{ error }}</p>
       <ul v-else>
         <li v-for="product in products" :key="product.id">
@@ -41,6 +45,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
@@ -51,32 +57,33 @@ export default {
     };
   },
   methods: {
-    fetchProducts() {
+    async fetchProducts() {
+      this.sortOption = null;
       this.isLoading = true;
       this.error = null;
 
-      // Replace the API call with your Vue.js equivalent (e.g., Axios or Vue Resource)
-      // You can use Vue's built-in functions to make HTTP requests.
+      try {
+        const response = await axios.get('https://dummyjson.com/products/category/smartphones');
 
-      // Example:
-      // axios.get("https://dummyjson.com/products/category/smartphones")
-      //   .then(response => {
-      //     if (response.data && response.data.products) {
-      //       this.products = response.data.products;
-      //     } else if (response.error) {
-      //       this.error = "Error fetching data. Please try again.";
-      //     }
-      //     this.isLoading = false;
-      //   });
+        if (response.data && response.data.products) {
+          this.products = response.data.products;
+        } else {
+          this.error = 'Error fetching data. Please try again.';
+        }
+      } catch (error) {
+        this.error = 'An error occurred while fetching data. Please try again.';
+      }
+
+      this.isLoading = false;
     },
     sortProducts() {
       let sortedProducts = [...this.products];
 
-      if (this.sortOption === "rating") {
+      if (this.sortOption === 'rating') {
         sortedProducts = sortedProducts.sort((a, b) => b.rating - a.rating);
-      } else if (this.sortOption === "price") {
+      } else if (this.sortOption === 'price') {
         sortedProducts = sortedProducts.sort((a, b) => a.price - b.price);
-      } else if (this.sortOption === "title") {
+      } else if (this.sortOption === 'title') {
         sortedProducts = sortedProducts.sort((a, b) => a.title.localeCompare(b.title));
       }
 

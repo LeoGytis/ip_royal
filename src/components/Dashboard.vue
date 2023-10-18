@@ -3,6 +3,7 @@
 import Activity from './Activity.vue';
 import Upcoming from './Upcoming.vue';
 import DashStats from './DashStats.vue';
+import Announcement from './Announcement.vue';
 </script>;
 
 <template>
@@ -11,7 +12,7 @@ import DashStats from './DashStats.vue';
     <div className="flex flex-col lg:flex-row gap-4">
       <div className="flex flex-col gap-4 w-full lg:w-2/3">
         <DashStats />
-        <!-- <Announcment /> -->
+        <Announcement />
       </div>
       <div className="flex flex-col lg:w-1/3 gap-4">
         <Activity />

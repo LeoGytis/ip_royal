@@ -16,7 +16,7 @@ interface Product {
   price: number;
 }
 
-const Announcement: React.FC = () => {
+const old-react: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [sortOption, setSortOption] = useState<string | null>(null);
@@ -116,4 +116,4 @@ const Announcement: React.FC = () => {
   );
 };
 
-export default Announcement;
+export default old-react;
