@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Activity from './components/Activity.vue';
 import NavMenu from './components/NavMenu.vue';
 import TopBar from './components/TopBar.vue';
+import Dashboard from './components/Dashboard.vue';
 </script>
 
 <template>
@@ -12,8 +12,7 @@ import TopBar from './components/TopBar.vue';
       </header>
       <main class="flex flex-col w-full">
         <TopBar />
-        <!-- <Dashboard /> -->
-        <Activity />
+        <Dashboard />
       </main>
     </div>
   </div>
