@@ -34,7 +34,7 @@ import scale5 from "../../../public/images/scale5.png";
           <div className="text-xs text-neutral-400">96 Women</div>
         </div>
         <div className="flex flex-col gap-4 justify-evenly items-center">
-          <Image src={scale} width={150} height={150} alt="scale" />
+          <img src="../images/scale.png" class="img_style" alt="scale" />
           <div className="text-xs bg-rose-100 rounded-lg p-1 px-3">
             +2% Past month
           </div>
@@ -48,7 +48,7 @@ import scale5 from "../../../public/images/scale5.png";
           <div className="text-xs text-neutral-400">10 Women</div>
         </div>
         <div className="flex flex-col gap-4 justify-evenly items-center">
-          <Image src={scale5} width={150} height={150} alt="scale5" />
+          <img src="../images/scale5.png" class="img_style" alt="scale5" />
           <div className="text-xs bg-rose-100 rounded-lg p-1 px-3">
             +5% Past month
           </div>
@@ -58,4 +58,9 @@ import scale5 from "../../../public/images/scale5.png";
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.img_style {
+  width: 150px;
+  height: 100px;
+}
+</style>
