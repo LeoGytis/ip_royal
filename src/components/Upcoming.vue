@@ -11,7 +11,8 @@
         <div
           className="flex items-center justify-between gap-4 text-xs rounded-lg text-gray-400 border border-gray-200 py-1 px-3">
           Today, 17 Oct 2023
-          <v-icon name="fa-globe" class="mt-1 mr-4" />
+          <v-icon name="fa-chevron-down" scale="0.8" class="text-gray-400 mx-1" />
+
 
         </div>
       </div>
@@ -25,7 +26,8 @@
             </div>
             <div>Today - 11:30</div>
           </div>
-          <v-icon name="fa-globe" class="mt-1 mr-4" />
+          <v-icon name="fa-chevron-down" scale="0.8" class="text-gray-400 mx-1" />
+
 
         </div>
       </div>
@@ -39,7 +41,8 @@
             </div>
             <div>Today - 13:30</div>
           </div>
-          <v-icon name="fa-globe" class="mt-1 mr-4" />
+          <v-icon name="fa-chevron-down" scale="0.8" class="text-gray-400 mx-1" />
+
 
         </div>
         <div className="flex justify-between items-center rounded-lg border border-gray-200 bg-gray-50 py-2 px-4">
@@ -49,7 +52,8 @@
             </div>
             <div>Today - 9:30</div>
           </div>
-          <v-icon name="fa-globe" class="mt-1 mr-4" />
+          <v-icon name="fa-chevron-down" scale="0.8" class="text-gray-400 mx-1" />
+
 
         </div>
       </div>
