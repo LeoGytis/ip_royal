@@ -1,8 +1,3 @@
-<script setup lang="ts">
-
-
-</script>
-
 <template>
   <div className="font-medium rounded-lg border border-gray-300">
     <div className="p-4">
@@ -63,6 +58,3 @@
     </div>
   </div>
 </template>
-
-<style scoped></style>
-    

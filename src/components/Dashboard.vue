@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 import Activity from './Activity.vue';
 import Upcoming from './Upcoming.vue';
@@ -21,5 +20,3 @@ import Announcement from './Announcement.vue';
     </div>
   </div>
 </template>
-
-<style scoped></style>

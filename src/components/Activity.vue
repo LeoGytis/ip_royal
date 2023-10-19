@@ -1,8 +1,3 @@
-<script setup lang="ts">
-
-
-</script>
-
 <template>
   <div class="rounded-lg font-medium bg-[#121843] text-white">
     <div class="rounded-t-lg bg-[#1B204A] py-2 px-6">Recent Activity</div>
@@ -22,7 +17,3 @@
     </div>
   </div>
 </template>
-
-<style scoped></style>
-    
-

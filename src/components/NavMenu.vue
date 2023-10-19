@@ -1,8 +1,3 @@
-<script setup lang="ts">
-
-
-</script>
-
 <template>
   <div class="w-full bg-gray-50 rounded-l-3xl border-r border-gray-200 px-4 lg:px-6">
     <div class="flex flex-col gap-10 justify-between lg:h-5/6 text-gray-400">
@@ -48,6 +43,3 @@
     </div>
   </div>
 </template>
-
-
-<style scoped></style>

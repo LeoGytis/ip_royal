@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <div class="w-full flex items-center justify-between px-4 lg:px-10 py-2 border-b border-gray-100">
     <div class="flex items-center text-gray-300">
