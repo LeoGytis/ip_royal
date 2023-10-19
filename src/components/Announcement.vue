@@ -46,6 +46,7 @@
 
 <script>
 import axios from 'axios';
+import { fetchProducts } from '../api/fetchData';
 
 export default {
   data() {
@@ -57,8 +58,7 @@ export default {
     };
   },
   created() {
-    // This hook is called when the component is created.
-    this.fetchProducts(); // Automatically fetch data when the component is created.
+    this.fetchProducts();
   },
   methods: {
     async fetchProducts() {
@@ -67,15 +67,9 @@ export default {
       this.error = null;
 
       try {
-        const response = await axios.get('https://dummyjson.com/products/category/smartphones');
-
-        if (response.data && response.data.products) {
-          this.products = response.data.products;
-        } else {
-          this.error = 'Error fetching data. Please try again.';
-        }
+        this.products = await fetchProducts('smartphones');
       } catch (error) {
-        this.error = 'An error occurred while fetching data. Please try again.';
+        this.error = error.message;
       }
 
       this.isLoading = false;
