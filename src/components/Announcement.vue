@@ -45,8 +45,7 @@
 </template>
 
 <script>
-import axios from 'axios';
-import { fetchProducts } from '../api/fetchData';
+import { fetchData } from '../api/fetchData';
 
 export default {
   data() {
@@ -57,8 +56,8 @@ export default {
       error: null,
     };
   },
-  created() {
-    this.fetchProducts();
+  async created() {
+    await this.fetchProducts();
   },
   methods: {
     async fetchProducts() {
@@ -67,7 +66,12 @@ export default {
       this.error = null;
 
       try {
-        this.products = await fetchProducts('smartphones');
+        const { data, error } = await fetchData('smartphones');
+        if (error) {
+          this.error = error;
+        } else {
+          this.products = data.products || [];
+        }
       } catch (error) {
         this.error = error.message;
       }
@@ -75,17 +79,13 @@ export default {
       this.isLoading = false;
     },
     sortProducts() {
-      let sortedProducts = [...this.products];
-
       if (this.sortOption === 'rating') {
-        sortedProducts = sortedProducts.sort((a, b) => b.rating - a.rating);
+        this.products.sort((a, b) => b.rating - a.rating);
       } else if (this.sortOption === 'price') {
-        sortedProducts = sortedProducts.sort((a, b) => a.price - b.price);
+        this.products.sort((a, b) => a.price - b.price);
       } else if (this.sortOption === 'title') {
-        sortedProducts = sortedProducts.sort((a, b) => a.title.localeCompare(b.title));
+        this.products.sort((a, b) => a.title.localeCompare(b.title));
       }
-
-      this.products = sortedProducts;
     },
   },
 };
