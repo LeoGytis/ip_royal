@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center items-center">
+    <div class="flex flex-col justify-center items-center">
       <p v-if="isLoading">
       <div class="flex items-center p-6">
         <v-icon name="fa-spinner" animation="spin-pulse" class="mr-3" />Loading...
@@ -55,6 +55,10 @@ export default {
       sortOption: null,
       error: null,
     };
+  },
+  created() {
+    // This hook is called when the component is created.
+    this.fetchProducts(); // Automatically fetch data when the component is created.
   },
   methods: {
     async fetchProducts() {
