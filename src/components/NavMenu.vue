@@ -8,7 +8,7 @@
         <div class="flex flex-col gap-6 items-center lg:items-start mb-10">
           <h2 class="text-xs text-gray-300">MAIN MENU</h2>
           <div class="flex flex-row">
-            <v-icon name="fa-cube" class="text-[#FF5151] mt-1 mr-4" />
+            <v-icon name="md-dashboard" class="text-[#FF5151] mt-1 mr-4" />
             <div class="hidden lg:flex">Dashboard</div>
           </div>
           <div class="flex">
@@ -16,7 +16,7 @@
             <div class="hidden lg:flex">Recruitment</div>
           </div>
           <div class="flex">
-            <v-icon name="fa-calendar-week" class="mt-1 mr-4" />
+            <v-icon name="bi-calendar3" class="mt-1 mr-4" />
             <div class="hidden lg:flex">Schedule</div>
           </div>
           <div class="flex">
@@ -24,7 +24,7 @@
             <div class="hidden lg:flex"> Employee</div>
           </div>
           <div class="flex">
-            <v-icon name="fa-school" class="mt-1 mr-4" />
+            <v-icon name="fa-building" class="mt-1 mr-4" />
             <div class="hidden lg:flex">Department</div>
           </div>
         </div>

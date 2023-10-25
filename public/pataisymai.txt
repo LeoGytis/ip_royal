@@ -1,8 +1,6 @@
 Bad:
 Panaudotas tailwindas, nors uzduotyje parasyta kad galima naudoti tik CSS.
 
-Kai kurie dizaino neatitikimai, kaip listas nera uzdengtas footerio, responsive dizaino minimalus dalykai.
-
 Truksta tvarkos, ypac templates, skirtingi spacingai, indentacija, kai kur yra semicolons, kai kur nera ir pan.
 
 Duomenimis rusiuoti naudojami sideefektai/duomenu mutacija, o ne derrived data.
