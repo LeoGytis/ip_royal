@@ -128,8 +128,8 @@ body {
 
 @media (min-width: 1024px) {
   .nav-icon {
-    margin-top: 0.25rem /* 4px */;
-    margin-right: 1rem /* 16px */;
+    margin-top: 0.25rem;
+    margin-right: 1rem;
   }
 }
 
@@ -139,6 +139,67 @@ body {
 
 @media (min-width: 1024px) {
   .nav-item-name {
+    display: flex;
+  }
+}
+
+/* --- TopBar Container --- */
+
+.topbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  border-color: #e5e7eb;
+}
+
+@media (min-width: 1024px) {
+  .topbar-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.topbar-wrapper {
+  display: flex;
+  align-items: center;
+  color: #d1d5db;
+  gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .topbar-wrapper {
+    gap: 1rem;
+  }
+}
+
+.search-icons {
+  display: block;
+  color: #d1d5db;
+}
+
+@media (min-width: 1024px) {
+  .search-icon {
+    display: none;
+  }
+}
+
+.topbar-border {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.search-placeholder {
+  display: none;
+  font-size: 14px;
+  padding-right: 12rem;
+}
+
+@media (min-width: 1024px) {
+  .search-placeholder {
     display: flex;
   }
 }
