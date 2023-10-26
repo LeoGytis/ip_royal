@@ -8,7 +8,6 @@ import Dashboard from './components/Dashboard.vue';
   <div class="app_container">
     <div class="wrapper">
       <header class="header">
-        <!-- <header class="hidden sm:flex w-1/6"> -->
         <NavMenu />
       </header>
       <main class="main">
