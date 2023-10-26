@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard.vue';
 </script>
 
 <template>
-  <div class="app_container">
+  <div class="app-container">
     <div class="wrapper">
       <header class="header">
         <NavMenu />

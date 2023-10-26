@@ -31,7 +31,7 @@ body {
 
 /* ---App Container--- */
 
-.app_container {
+.app-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@ body {
   padding: 4px;
 }
 
-.app_container > .wrapper {
+.app-container > .wrapper {
   display: flex;
   width: 100%;
   background-color: #fff;
