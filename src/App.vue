@@ -5,12 +5,13 @@ import Dashboard from './components/Dashboard.vue';
 </script>
 
 <template>
-  <div class="mx-auto min-h-screen flex items-center justify-center p-2">
-    <div class="flex w-full bg-white border-8 border-[#FF7D7D] rounded-3xl">
-      <header class="hidden sm:flex w-1/6">
+  <div class="app_container">
+    <div class="wrapper">
+      <header class="header">
+        <!-- <header class="hidden sm:flex w-1/6"> -->
         <NavMenu />
       </header>
-      <main class="flex flex-col w-full">
+      <main class="main">
         <TopBar />
         <Dashboard />
       </main>

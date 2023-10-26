@@ -17,7 +17,49 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: #000;
   background: #ff5151;
+}
+
+.app_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px;
+}
+
+.app_container > .wrapper {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border: 8px solid #ff7d7d;
+  border-radius: 1.5rem;
+}
+
+.wrapper > .header {
+  display: flex;
+  width: 16.66666667%;
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper > .header {
+    display: none;
+  }
+}
+
+.wrapper > .main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
