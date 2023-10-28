@@ -13,3 +13,17 @@ Nera testu.
 
 Good:
 Dizainas, neskaitant fake device frame atrodo neblogai.
+
+
+------------------------
+
+Bad:
+Panaudotas tailwindas, nors uzduotyje parasyta kad galima naudoti tik CSS.
+Figmoje buvo atvaizduota aplikacija raudoname fone. Implementuota ir tas fake device remas.
+Kai kurie dizaino neatitikimai, kaip listas nera uzdengtas footerio, responsive dizaino minimalus dalykai.
+Truksta tvarkos, ypac templates, skirtingi spacingai, indentacija, kai kur yra semicolons, kai kur nera ir pan.
+Duomenimis rusiuoti naudojami sideefektai/duomenu mutacija, o ne derrived data.
+Nemazai kodo dublikacijos/template jei yra 3 cards, tai vietoje vieno Card komponento, 3 kartus parasytas toks pats kodas. Pacio komponentu kodo mazai, beveik visur vien tik templates todel sunku ivertinti pacio Javascript/Typescript kodo gebejimus.
+Nera testu.
+Good:
+Dizainas, neskaitant fake device frame atrodo neblogai.
